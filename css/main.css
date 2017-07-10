@@ -42,7 +42,7 @@ nav ul {
 table {
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
+  max-width: 100%;
   float: none;
   margin-top: 50px;
 }
@@ -54,8 +54,12 @@ footer {
   margin-bottom: 50px;
 }
 
+footer p {
+  color: #262626;
+}
+
 footer a {
-  color: #000;
+  color: #262626;
 }
 
 footer a:hover {
