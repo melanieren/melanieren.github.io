@@ -233,3 +233,43 @@ blockquote {
    filter:none !important;
 }
 
+.dropdown {
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  border-top: 2px solid #eaeaea;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 9999999999999999999;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 90%; 
+  right: 0;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .menu {
+    display: block;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .menu {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    text-align: center;   
+  }
+}
+
