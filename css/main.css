@@ -233,6 +233,17 @@ blockquote {
    filter:none !important;
 }
 
+.btn,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #8dacba;
+  background-color: #fff;
+  border: 2px double #8dacba;
+  letter-spacing: 2px;
+}
+
 .dropdown {
   width: 100%;
   position: sticky;
@@ -252,6 +263,52 @@ blockquote {
   top: 90%; 
   right: 0;
   text-align: center;
+}
+
+.dropdown .dropdown-menu {
+  -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown.open .dropdown-menu {
+  -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+
+  max-height: 190px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 960px) {
+  .menu {
+    display: block;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .menu {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    text-align: center;   
+    letter-spacing: 1px; 
+  }
 }
 
 @media (min-width: 960px) {
