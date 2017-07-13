@@ -129,6 +129,13 @@ a.currentpage {
   font-family: 'Roboto';
   letter-spacing: 1px;
 }
+
+.interests p {
+  font-family: 'Roboto';
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #a8bbdb;
+}
  
 .contact {
   margin: auto;
@@ -163,29 +170,6 @@ a.currentpage {
   transition: color 0.5s ease;
   text-decoration: none;
 }
- 
-.icons {
-  float: left;
-  margin-left: 650px;
-}
- 
-.contactlinks {
-  float: right;
-  margin-right: 620px;
-  text-align: left;
-}
- 
-.icons li {
-  padding: 10px;
-  text-decoration: none;
-  list-style-type: none;
-}
- 
-.contactlinks li {
-  padding: 10px;
-  text-decoration: none;
-  list-style-type: none;
-}
 
 .container {
   box-sizing: border-box;
@@ -198,13 +182,13 @@ a.currentpage {
   color: #6d6d6d;
 }
 
-.info {
+.colour1, .info {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color:#eff5f7;
 }
 
-.quotes {
+.colour2 {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color:#f4fbff;
