@@ -109,10 +109,13 @@ blockquote {
   padding: 5px;
   background-color: #dee8f7;
   border-radius: 5px;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
  
 .menu a:hover {
-  transition: background-color 0.5s ease;
   background-color: #eff5ff;
   color: #777777;
 }
@@ -247,6 +250,19 @@ a.currentpage {
   top: 90%; 
   right: 0;
   text-align: center;
+}
+
+.dropdown-menu li > a {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.dropdown-menu li > a:hover, 
+.dropdown-menu li > a:focus {
+  background-color: #eff6f9;
+  filter: none;
 }
 
 .dropdown .dropdown-menu {
