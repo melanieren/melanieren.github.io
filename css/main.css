@@ -128,6 +128,17 @@ a.currentpage {
   background-color: #a8bbdb;
   color: #ffffff;
 }
+
+.divider {
+  display: block;
+  font-family: Arial;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 2em;
+  color: #adadad;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
  
 .intro {
   margin: auto;
