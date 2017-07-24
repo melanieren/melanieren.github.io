@@ -254,7 +254,7 @@ a.currentpage:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #fcfbf9;
   z-index: 9999999999999999999;
   margin-right: auto;
   margin-left: auto;
@@ -268,6 +268,7 @@ a.currentpage:hover {
 }
 
 .dropdown-menu li > a {
+  border: none !important;
   -webkit-transition: background-color 0.5s ease;
   -moz-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
@@ -276,7 +277,7 @@ a.currentpage:hover {
 
 .dropdown-menu li > a:hover, 
 .dropdown-menu li > a:focus {
-  background-color: #eff6f9;
+  background-color: #fedcd2;
   filter: none;
 }
 
