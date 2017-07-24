@@ -28,7 +28,7 @@ h3 {
 
 body {
   font-size: 100%; 
-  background-color:#fff;
+  background-color:#fcfbf9;
 }
  
 nav {
@@ -55,16 +55,16 @@ footer {
 }
 
 footer p {
-  color: #262626;
+  color: #898989;
 }
 
 footer a {
-  color: #262626;
+  color: #898989;
 }
 
 footer a:hover {
   text-decoration: none;
-  color: #000;
+  color: #898989;
 }
 
 blockquote {
@@ -80,16 +80,16 @@ blockquote {
 }
 
 .menu {
-  positon: relative;
+  position: sticky;
   margin: 0;
   overflow: hidden;
   text-align: center;
-  border-top: 2px solid #eaeaea;
+  border-top: 2px solid #dcdfe5;
   padding-top: 35px;
   padding-bottom: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #fcfbf9;
   z-index: 9999999999;
 }
  
@@ -102,13 +102,12 @@ blockquote {
 .menu a {
   display: inline-block;
   text-decoration: none;
-  color: #777777;
+  color: #3d3d3d;
   font-family: Arial, sans-serif;
   font-size: 1em;
   letter-spacing: 1px;
   padding: 5px;
-  background-color: #dee8f7;
-  border-radius: 5px;
+
   -webkit-transition: background-color 0.5s ease;
   -moz-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
@@ -116,17 +115,22 @@ blockquote {
 }
  
 .menu a:hover {
-  background-color: #eff5ff;
+  background-color: #fedcd2;
   color: #777777;
+  border-radius: 3px;
 }
  
 .menu a:active {
-  background-color: #beceea;
+  background-color: #fedcd2;
 }
  
 a.currentpage {
-  background-color: #a8bbdb;
-  color: #ffffff;
+  color: #898989;
+  border-bottom: solid #fedcd2;
+}
+
+a.currentpage:hover {
+  background-color: transparent;
 }
 
 .divider {
@@ -153,7 +157,7 @@ a.currentpage {
   margin: auto;
   max-width: 100%;
   height: 100%;
-  background-color: #eff5f7;
+  background-color: #e3f0f0;
   text-align: center; 
   padding-top: 15px;
   padding-bottom: 15px;
@@ -197,20 +201,20 @@ a.currentpage {
 .colour1, .info {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color:#eff5f7;
+  background-color: #e3f0f0;
 }
 
 .colour2 {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color:#f4fbff;
+  background-color: #ecf2f2;
 }
 
 .interests p {
   font-family: 'Roboto';
   font-size: 1em;
   letter-spacing: 1px;
-  color: #a8bbdb;
+  color: #898989;
 }
 
 .stickyElement {
@@ -236,9 +240,9 @@ a.currentpage {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  color: #8dacba;
-  background-color: #fff;
-  border: 2px double #8dacba;
+  color: #f0bcad !important;
+  background-color: transparent !important;
+  border: 2px double #fedcd2 !important;
   letter-spacing: 2px;
 }
 
