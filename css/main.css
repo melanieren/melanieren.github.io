@@ -378,7 +378,7 @@ a.currentpage:hover {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 500px) {
   .menu {
     display: block;
   }
@@ -387,7 +387,7 @@ a.currentpage:hover {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 500px) {
   .menu {
     display: none;
   }
