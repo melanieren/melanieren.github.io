@@ -1,65 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="assets/favicon.png"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
     <title>Molan Ren | Home</title>
   </head>
 
   <body>
 
-    <div class="header"><a href="index.html">molan ren</a></div>
-     
-    <nav class="menu stickyElement">
-      <ul>
-        <li><a class="currentpage" href="index.html">HOME</a></li>
-        <li><a href="profile.html">PROFILE</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="resume.pdf">RESUME</a></li> 
-        <li><a href="contact.html">CONTACT</a></li> 
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="header display-lg"><a href="index.html"><h1 data-aos="fade-up" data-aos-duration="800">Molan Ren</h1></a></div>
 
-    <div class="dropdown stickyElement">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Navigate
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a class="currentpage" href="index.html">HOME</a></li>
-        <li><a href="profile.html">PROFILE</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="resume.pdf">RESUME</a></li> 
-        <li><a href="contact.html">CONTACT</a></li> 
-      </ul>
+      <div id="hi" class="container display-lg">
+        <div class="line"></div>
+      </div>
+
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#"><div class="header display-sm"><a href="index.html"><h1 data-aos="fade-right" data-aos-duration="800">Molan Ren</h1></a></div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets/resume.pdf">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-      
-    <div class="container info">      
+
+    <div class="container display-sm">
+      <div class="line"></div>
+      <br><br>
+    </div>
+
+    <div class="container info">
       <div class="row">
-        <div class="col-sm-12" style="background-color:#e3f0f0;">
-          <div class="intro"><p>Hi, I'm Molan.</p></div>
-          <br><p>Student developer and avid learner.</p>
+        <div id="intro">
+          <img id="profile" src="assets/img/profile.jpg" alt="Molan Ren">
+          <h2>Hi, I'm Molan.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p id="desc">
+            I'm a Computer Science and Statistics student at the University of Waterloo.<br>
+            I love learning new things, tackling challenges, and creating solutions.
+          </p>
           <br><br>
-          <div class="divider">&mdash;</div>
-          <br><br><p>Thanks for dropping by.</p>
-          <br><p>Feel free to explore!</p>
+          <div class="line"></div>
         </div>
       </div>
+      <br><br><br>
+
+      <div id="work" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <h3 data-aos="fade-right" data-aos-duration="800">Work</h3><br>
+          <h4><a href="https://www.cooperators.ca/">The Co-operators</a></h4>
+          <p>Web Developer</p>
+          <br>
+          <h4><a href="https://www.agf.com">AGF Investments</a></h4>
+          <p>Service Delivery Co-ordinator</p>
+          <div class="display-sm"><br><br><br><br><br></div>
+        </div>
+        <div class="col-md-4">
+          <h3 data-aos="fade-right" data-aos-duration="800">Projects</h3><br>
+          <h4><a href="https://github.com/molanren/MoMA-analysis">MoMA Data Analysis</a></h4>
+          <p>A visual analysis of data collected from the Museum of Modern Art (MoMA).</p>
+          <br>
+          <h4><a href="https://github.com/molanren/countdown-extension">Countdown Extension</a></h4>
+          <p>A Chrome extension for countdown timers.</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <br><br><br><br><br>
+
+      <div id="values" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h3 data-aos="fade-right" data-aos-duration="800">What I Believe In</h3>
+          <br>
+          <p>
+            I believe in hard work, dedication, and solutions that put people first.
+          </p>
+          <p>
+            Here are a few of my favourite quotes:
+            <ul>
+              <li>"In the middle of difficulty lies opportunity."</li>
+              <li>"Stay committed to your decisions, but stay flexible in your approach."</li>
+              <li>"Adventure begins at the end of your comfort zone."</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <br><br><br><br><br>
+
+      <div id="interests" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h3 data-aos="fade-right" data-aos-duration="800">What I Do for Fun</h3><br>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Badminton</h4>
+              <br>
+              <img src="https://png.icons8.com/badminton/ios7/50" height="40" width="40"><br><br>
+              <div class="interest-button" id="interest1">+</div><br>
+              <div id="interest1Content">
+                <p>My favourite way to get some exercise.</p>
+              </div>
+              <div class="display-sm"><br><br></div>
+            </div>
+            <div class="col-md-4">
+              <h4>Visual Arts</h4>
+              <br>
+              <img src="http://icons.iconarchive.com/icons/designcontest/outline/48/Brush-icon.png" height="40" width="40"><br><br>
+              <div class="interest-button" id="interest2">+</div><br>
+              <div id="interest2Content">
+                <p>
+                  Whether it's drawing, painting, or photography, visual arts has always been a passion in my life.
+                  Check out some of the photos I've taken <b><a href="gallery.html">here</a></b>.
+                </p>
+              </div>
+              <div class="display-sm"><br><br></div>
+            </div>
+            <div class="col-md-4">
+              <h4>Reading</h4>
+              <br>
+              <img src="https://png.icons8.com/ios/1600/literature.png" height="40" width="40"><br><br>
+              <div class="interest-button" id="interest3">+</div><br>
+              <div id="interest3Content">
+                <p>Check out my <b><a href="books.html">book recommendations</a></b>!</p>
+              </div>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <br><br><br><br><br>
+
+      <div id="connect">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <h3 data-aos="fade-right" data-aos-duration="800">Let's Connect</h3>
+          </div>
+          <div class="col-md-2"></div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+            <h4>E-mail</h4>
+            <a href="mailto:ren.molan@gmail.com">ren.molan@gmail.com</a>
+          </div>
+          <div class="col-md-2">
+            <h4>LinkedIn</h4>
+            <a href="https://ca.linkedin.com/in/molanren">linkedin.com/in/molanren</a>
+          </div>
+          <div class="col-md-2">
+            <h4>GitHub</h4>
+            <a href="https://github.com/molanren">github.com/molanren</a>
+          </div>
+          <div class="col-md-2">
+            <h4>Instagram</h4>
+            <a href="https://www.instagram.com/molanren/">@molanren</a>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <br><br><br>
     </div>
 
-    <footer>
-      <div class="row">
-        <div class="col-sm-12 style="background-color:#fff;"> 
-          <p>Molan Ren | Computer Science and Statistics | <a href="contact.html">Contact</a></p>
-        </div>
-      </div>
-    </footer>
+    <button id="scroll" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="assets/js/script.js"></script>
 
   </body>
-
 </html>
