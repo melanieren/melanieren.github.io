@@ -109,7 +109,7 @@ button:focus {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  cursor:pointer;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   background-color: #aaa;
@@ -177,6 +177,7 @@ body {
   color: #fff;
   width: 25px;
   margin: auto;
+  cursor: pointer;
 }
 
 #interest1Content, #interest2Content, #interest3Content {
