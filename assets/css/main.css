@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+.section {
+  padding-bottom: 90px;
+}
+
 #intro {
   margin: 10px auto 20px;
 }
@@ -36,6 +40,7 @@
 #desc {
   font-size: 1.1em;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .language {
@@ -87,15 +92,84 @@ a:hover {
   letter-spacing: 1px;
 }
 
-.navbar-toggler {
-  display: inline;
-  font-size: 1em;
-}
-
 .navbar .navbar-nav .active {
   color: #898989;
   border-bottom: solid #fedcd2;
   border-radius: 0px;
+}
+
+/* Menu button for mobile */
+.navbar-toggler {
+  display: inline;
+  font-size: 1em;
+  border: none;
+}
+
+.nav-icon {
+  width: 10px;
+  height: 30px;
+  position: relative;
+  margin: 15px 10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  border-radius: 2px;
+  background: rgba(0,0,0,0.4);
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 8px;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 15px;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 22px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  top: 13px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -10px;
+}
+
+.nav-icon.open span:nth-child(3) {
+  top: 13px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 /* Back to top button */
@@ -293,6 +367,9 @@ body {
     display: inline;
     font-size: 1em;
   }
+  .section {
+    padding-bottom: 80px;
+  }
   #profile {
     width: 60px;
     height: 60px;
@@ -303,18 +380,29 @@ body {
   }
   #desc {
     font-size: 1em;
+    padding-bottom: 0;
   }
   #work h3 {
     text-align: center;
   }
-  .info {
+  .info, .gallery-container {
     margin-bottom: 0;
+    border-top: 1px solid #dcdfe5;
   }
-  .gallery-container {
-    margin-bottom: 0;
+  .interest {
+    padding-bottom: 50px;
+  }
+  .connect-link {
+    padding-bottom: 25px;
   }
   .gallery {
     padding: 0 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 1536px) {
+  .connect-link {
+    padding-bottom: 25px;
   }
 }
 

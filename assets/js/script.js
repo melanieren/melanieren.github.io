@@ -14,6 +14,9 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
+    $('.nav-icon').click(function(){
+        $(this).toggleClass('open');
+    });
 });
 
 /* Interest buttons */
